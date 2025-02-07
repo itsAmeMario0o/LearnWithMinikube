@@ -78,3 +78,31 @@ minikube start
 #### NOTE - This will start a minikube control plane with defaults, such a CNI etc. There may be a desire to run without such.
 
 For additional detail see [here](https://minikube.sigs.k8s.io/docs/handbook/)
+
+### 1️⃣1️⃣ Add a Node to the Cluster
+
+Expand your cluster with an additional worker node:
+```
+minikube node add --worker
+```
+
+### 1️⃣2️⃣ Access the Kubernetes Dashboard
+
+Monitor your Minikube environment with the K8s dashboard:
+```
+minikube dashboard
+```
+
+### 🛑 Stopping and Deleting the Cluster
+
+When you're done, you can stop and delete your cluster:
+```
+minikube stop
+```
+
+```
+minikube delete --all
+```
+
+Now you're all set to conquer the Kubernetes world with Minikube! Happy clustering! 🎉🎈
+
